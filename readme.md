@@ -19,3 +19,6 @@ git push -u origin main
 New change
 
 **naming convenntion: use small case with Hyphons(-). No spaces**
+```
+git add . ;git commit -m "some-message"; git push -u origin main 
+```
