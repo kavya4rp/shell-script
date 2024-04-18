@@ -27,6 +27,6 @@ then
     echo "Installation of git...FAILURE"
     exit 1
     else
-    Installation of Git...SUCCESS
+    echo Installation of Git...SUCCESS
     fi
 echo "is script proceeding?"
