@@ -2,8 +2,8 @@
 
 #declaring of varible
 
-PERSON1=$rajesh
-PERSON2=$divya
+PERSON1=$1
+PERSON2=$2
 #referring varible
 
 echo "$PERSON1:: Hello $PERSON2, how are you?"
