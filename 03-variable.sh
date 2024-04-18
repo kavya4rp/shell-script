@@ -1,7 +1,10 @@
 #!/bib/bash
 
-PERSON1=sudiksha #no space between = and value
-PERSON2=kavya
+#declaring of varible
+
+PERSON1=$1
+PERSON2=$2
+#referring varible
 
 echo "$PERSON1:: Hello $PERSON2, how are you?"
 echo "$PERSON2:: Hi $PERSON1, iam fine. how are you?"
