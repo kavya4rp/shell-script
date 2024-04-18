@@ -2,8 +2,8 @@
 
 #declaring of varible
 
-PERSON1=$rajesh  #no space between = and value
-PERSON2=$divya
+PERSON1=rajesh1  #no space between = and value
+PERSON2=divya1
 #referring varible
 
 echo "$PERSON1:: Hello $PERSON2, how are you?"
