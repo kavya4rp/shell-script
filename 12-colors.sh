@@ -31,3 +31,6 @@ VALIDATE $? "Installing MYSQL"
 
 dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing GIT"
+
+dnf install dockerr -y &>>$LOGFILE
+VALIDATE $? "Something wrong command I tried"
