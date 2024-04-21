@@ -34,6 +34,7 @@ do
     then
         echo -e "$i already installed...$Y SKIPPING $N"
      else
-        echo "$i not installed...Need to install"
+        dnf install $i -y &>>$LOGFILE
+        VALIDATE $? "Installon of $i" 
     fi
 done 
