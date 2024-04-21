@@ -10,7 +10,7 @@ VALIDATE(){
         echo "$2...FAILURE"
         exit 1
     else 
-        echo $2...SUCCESS"
+        echo "$2...SUCCESS"
     fi
 }
 if [ $USERID -ne 0 ]
@@ -28,7 +28,7 @@ do
     if [ $? -eq 0 ]
     then
         echo "$i already installed...SKIPPING"
-        else
+     else
         echo "$i not installed...Need to install"
-        fi
+    fi
 done 
