@@ -2,7 +2,13 @@
 
 set -e
 
-USERID=$(id -u)
+failure(){
+    echo "Failed at $1: $2"
+}
+
+trap 'failure ${LINENO} "$SBASH_COMMAND"' ERR
+
+USERID=$(id -u) #ERR
 
 if [ $USERID -ne 0 ]
 then   
@@ -12,7 +18,7 @@ else
     echo "you are super user."
 fi
 
-dnf install mysql -y
+dnf install mysqlll -y
 dnf install git -y
 
 echo "is script proceeding?"
