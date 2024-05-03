@@ -2,6 +2,7 @@
 
 DISK_USAGE=$(df -hT | grep xfs)
 DISK_THRESHOLD=6
+MESSAGE=""
 
 while IFS= read -r line
 do
@@ -12,3 +13,5 @@ do
         echo "$FOLDER is more then $DISK_THRESHOLD, Current usage: $USAGE"
     fi
 done <<< $DISK_USAGE
+
+echo "Message: $MESSAGE"
